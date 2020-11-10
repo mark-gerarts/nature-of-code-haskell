@@ -2,7 +2,7 @@ module Introduction.TraditionalRandomWalk where
 
 import Prelude hiding ( Left, Right )
 import Graphics.Gloss
-import Graphics.Gloss.Interface.IO.Interact ( Event )
+import Graphics.Gloss.Data.ViewPort ( ViewPort )
 import System.Random
 
 data World = World { rndGen :: StdGen
@@ -19,16 +19,21 @@ instance Random Direction where
             (x, g') -> (toEnum x, g')
     random = randomR (minBound, maxBound)
 
+width :: Int
+width = 800
+
+height :: Int
+height = 600
+
 main :: IO ()
 main = do
     g <- newStdGen
-    play
-        (InWindow "Traditional Random Walker" (800, 600) (50, 50))
+    simulate
+        (InWindow "Traditional Random Walker" (width, height) (50, 50))
         white
         20
         (initial g)
         view
-        inputHandler
         update
 
 view :: World -> Picture
@@ -36,11 +41,8 @@ view World{previousPositions=ps} = Pictures $ map renderPosition ps
     where
         renderPosition (x, y) = translate x y $ rectangleSolid 1 1
 
-inputHandler :: Event -> World -> World
-inputHandler _ w = w
-
-update :: Float -> World -> World
-update _ world@World{rndGen=g, currentPosition=p, previousPositions=ps} =
+update :: ViewPort -> Float -> World -> World
+update _ _ world@World{rndGen=g, currentPosition=p, previousPositions=ps} =
     let (direction, g') = random g
         newPosition = walk p direction
     in world{rndGen=g', currentPosition=newPosition, previousPositions=p:ps}

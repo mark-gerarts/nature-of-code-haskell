@@ -1,4 +1,5 @@
 .stack-work/
+dist/
 
 # Let's exclude the lockfile since we're not really interested in reproducible
 # builds for this project.
