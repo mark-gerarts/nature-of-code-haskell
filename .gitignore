@@ -1,0 +1,11 @@
+.stack-work/
+
+# Let's exclude the lockfile since we're not really interested in reproducible
+# builds for this project.
+stack.yaml.lock
+
+# When generating recordings, these are the output files used. No need to
+# commit them.
+sketch.gif
+sketch.mp4
+!src/**/sketch.gif
