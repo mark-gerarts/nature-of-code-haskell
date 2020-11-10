@@ -1,7 +1,7 @@
 # Nature of Code - Haskell edition
 
-[Nature of Code](noc) examples and exercises implemented in Haskell using
-[gloss](gloss).
+[Nature of Code][noc] examples and exercises implemented in Haskell using
+[gloss][gloss].
 
 ## Running examples manually
 
@@ -27,7 +27,7 @@ copy-pasted.
 
 ## Recordings
 
-Recordings of the sketches are made using [SimpleScreenRecorder](ssr), as it
+Recordings of the sketches are made using [SimpleScreenRecorder][ssr], as it
 allows to directly record an OpenGL application.
 
 The recording is saved as an mp4, and then converted to gif using ffmpeg:
@@ -41,9 +41,11 @@ $ ffmpeg -i sketch.mp4 sketch.gif
 This is something I like to do to gain a better understanding of a language.
 See also:
 
-- [Nature of Code - Lisp edition](https://github.com/mark-gerarts/nature-of-code)
-- [Nature of Code - Elm edition](https://github.com/mark-gerarts/nature-of-code-elm)
+- [Nature of Code - Lisp edition][noc-lisp]
+- [Nature of Code - Elm edition][noc-elm]
 
 [noc]: http://natureofcode.com/
 [gloss]: http://gloss.ouroborus.net/
 [ssr]: https://www.maartenbaert.be/simplescreenrecorder/
+[noc-lisp]: https://github.com/mark-gerarts/nature-of-code
+[noc-elm]: https://github.com/mark-gerarts/nature-of-code-elm
