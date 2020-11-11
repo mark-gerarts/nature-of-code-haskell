@@ -38,6 +38,7 @@ detection where the window edges act as walls).
   - [Example I.1: Traditional random walk](src/Introduction/TraditionalRandomWalk)
   - [Example I.2: Random number distribution](src/Introduction/RandomNumberDistribution)
   - [Example I.3: Walker that tends to move to the right](src/Introduction/WalkerThatTendsToTheRight)
+  - [Example I.4: Gaussian distribution](src/Introduction/GaussianDistribution)
   - [Exercise I.3: Dynamic random walker](src/Introduction/DynamicRandomWalker)
 
 ## Recordings

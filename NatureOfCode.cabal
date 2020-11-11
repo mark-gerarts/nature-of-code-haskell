@@ -18,5 +18,6 @@ executable NatureOfCodeGloss
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5,
                        gloss >= 1.13,
-                       random,
-                       containers
+                       random >= 1.1,
+                       containers >= 0.6,
+                       random-fu >= 0.2.7
