@@ -1,4 +1,4 @@
-module Introduction.TraditionalRandomWalk.Sketch where
+module Introduction.WalkerThatTendsToTheRight.Sketch where
 
 import Prelude hiding ( Left, Right )
 import Graphics.Gloss
@@ -13,10 +13,16 @@ type Position = (Float, Float)
 
 data Direction = Up | Down | Left | Right deriving ( Enum, Bounded, Eq, Show )
 
+-- Basically the same as the traditional random walker, but we override the
+-- random implementation to favor going to the right.
 instance Random Direction where
-    randomR (a, b) g =
-        case randomR (fromEnum a, fromEnum b) g of
-            (x, g') -> (toEnum x, g')
+    randomR _ g =
+        let (r, g') = randomR (0.0 :: Float, 1.0 :: Float) g
+            a | r < 0.4 = Right
+              | r < 0.6 = Left
+              | r < 0.8 = Up
+              | otherwise = Down
+        in (a, g')
     random = randomR (minBound, maxBound)
 
 width :: Int
@@ -29,7 +35,7 @@ main :: IO ()
 main = do
     g <- newStdGen
     simulate
-        (InWindow "Traditional Random Walker" (width, height) (50, 50))
+        (InWindow "Walker that tends to move to the right" (width, height) (50, 50))
         white
         20
         (initial g)
