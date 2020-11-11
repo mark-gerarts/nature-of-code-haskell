@@ -1,4 +1,4 @@
-# Example I.1: Random number distribution
+# Example I.2: Random number distribution
 
 ```
 $ stack runghc src/Introduction/RandomNumberDistribution/Sketch.hs
