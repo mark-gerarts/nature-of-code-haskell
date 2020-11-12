@@ -15,12 +15,6 @@ width = 640
 height :: Int
 height = 200
 
-centerX :: Float
-centerX = fromIntegral width / 2
-
-centerY :: Float
-centerY = fromIntegral height / 2
-
 main :: IO ()
 main = do
     g <- newStdGen

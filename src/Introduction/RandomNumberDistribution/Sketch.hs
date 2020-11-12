@@ -6,7 +6,6 @@ import Graphics.Gloss.Data.ViewPort ( ViewPort )
 import Data.Map ( Map )
 import qualified Data.Map as Map
 import System.Random
-import Introduction.RandomNumberDistribution.Depend
 
 data World = World { distribution :: Map Int Int
                    , numbers :: [Int]  }

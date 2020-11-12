@@ -3,6 +3,8 @@
 [Nature of Code][noc] examples and exercises implemented in Haskell using
 [gloss][gloss].
 
+![Recursive tree](assets/tree.png)
+
 ## Running examples manually
 
 Run each sketch individually using the following command:
@@ -40,6 +42,9 @@ detection where the window edges act as walls).
   - [Example I.3: Walker that tends to move to the right](src/Introduction/WalkerThatTendsToTheRight)
   - [Example I.4: Gaussian distribution](src/Introduction/GaussianDistribution)
   - [Exercise I.3: Dynamic random walker](src/Introduction/DynamicRandomWalker)
+- [Fractals](src/Fractals/)
+  - [Example 8.6: Recurisve tree](src/Fractals/RecursiveTree)
+  - [Example 8.7: Recursive tree (dynamic)](src/Fractals/DynamicRecursiveTree)
 
 ## Recordings
 
