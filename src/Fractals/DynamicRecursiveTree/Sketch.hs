@@ -2,6 +2,7 @@ module Fractals.DynamicRecursiveTree.Sketch where
 
 import Graphics.Gloss
 import Graphics.Gloss.Interface.IO.Interact ( Event(..) )
+import NatureOfCode.Util ( mapRange )
 
 -- Our "world" is just the position of the mouse.
 type MousePosition = Point
@@ -56,8 +57,3 @@ branch n theta = go n
             where
                 baseLength = 120
                 l = baseLength * 0.66^(n-n')
-
--- |Credit: https://rosettacode.org/wiki/Map_range#Haskell.
--- This should probably go to a util module.
-mapRange :: Fractional a => (a, a) -> (a, a) -> a -> a
-mapRange (a1, a2) (b1, b2) s = b1 + (s - a1) * (b2 - b1) / (a2 - a1)

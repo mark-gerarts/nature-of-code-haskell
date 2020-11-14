@@ -1,7 +1,7 @@
 name:                NatureOfCode
 version:             0.1.0.0
 description:         Nature of Code exercises and examples implemented in Gloss.
-homepage:            https://github.com/mark-gerarts/NatureOfCodeGloss#readme
+homepage:            https://github.com/mark-gerarts/nature-of-code-haskell
 license:             MIT
 license-file:        LICENSE
 author:              Mark Gerarts
@@ -12,6 +12,12 @@ build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  README.md
 
+library
+  hs-source-dirs:    src
+  build-depends:     base >= 4.7 && < 5
+  default-language:  Haskell2010
+  exposed-modules:   NatureOfCode.Util
+
 executable NatureOfCodeGloss
   hs-source-dirs:      src
   main-is:             Main.hs
@@ -20,4 +26,6 @@ executable NatureOfCodeGloss
                        gloss >= 1.13,
                        random >= 1.1,
                        containers >= 0.6,
-                       random-fu >= 0.2.7
+                       random-fu >= 0.2.7,
+                       mtl >= 2.2
+  other-modules:       NatureOfCode.Util
