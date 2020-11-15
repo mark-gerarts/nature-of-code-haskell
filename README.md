@@ -43,6 +43,8 @@ detection where the window edges act as walls).
   - [Example I.4: Gaussian distribution](src/Introduction/GaussianDistribution)
   - [Exercise I.3: Dynamic random walker](src/Introduction/DynamicRandomWalker)
   - [Exercise I.4: Paint splatter](src/Introduction/PaintSplatter)
+  - [Exercise I.5: Gaussian random walk](src/Introduction/GaussianRandomWalk)
+  - [Exercise I.6: Custom distribution walker](src/Introduction/CustomDistributionWalker)
 - [Fractals](src/Fractals/)
   - [Example 8.6: Recurisve tree](src/Fractals/RecursiveTree)
   - [Example 8.7: Recursive tree (dynamic)](src/Fractals/DynamicRecursiveTree)
