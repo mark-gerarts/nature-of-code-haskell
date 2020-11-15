@@ -48,6 +48,9 @@ extra-deps:
   - rvar-0.2.0.6
   - flexible-defaults-0.0.3
 
+  # Perlin noise
+  - hsnoise-0.0.2
+
 # Override default flag values for local packages and extra-deps
 # flags: {}
 

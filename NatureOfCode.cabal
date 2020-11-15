@@ -27,5 +27,6 @@ executable NatureOfCodeGloss
                        random >= 1.1,
                        containers >= 0.6,
                        random-fu >= 0.2.7,
-                       mtl >= 2.2
+                       mtl >= 2.2,
+                       hsnoise == 0.0.2
   other-modules:       NatureOfCode.Util
