@@ -33,18 +33,26 @@ view :: [Point] -> Picture
 view = Pictures . map viewSingle
 
 viewSingle :: Point -> Picture
-viewSingle p = Color (withAlpha 0.95 black)
+viewSingle p = Color (withAlpha 0.96 red)
     $ uncurry translate p
     $ getRotationForPoint p
     $ getScaleForPoint p
     $ circleSolid
     $ getSizeForPoint p
     where
+        -- Rotates the splatter so that the major axis goes through the origin,
+        -- making it look like it splatted away from the center.
         getRotationForPoint p = rotate $ - (radToDeg $ argV p)
-        getScaleForPoint p = scale (mapRange (0, maxMag) (1, 3) (magV p)) 1
+
+        -- Scales the circle into an ellipse, with greater scaling the further
+        -- away from the origin.
+        getScaleForPoint p = scale 1 (1 / mapRange (0, maxMag) (1, 3) (magV p))
+
+        -- Make further splatters smaller.
         getSizeForPoint p = maxSize - mapRange (0, maxMag / 2) (0, maxSize - 1) (magV p)
+
         maxMag = magV (fromIntegral width, fromIntegral height)
-        maxSize = 80
+        maxSize = 60
 
 normals :: MonadRandom m => Float -> Float -> m [Float]
 normals a b = (sequence . repeat) (sample (normal a b))
