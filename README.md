@@ -41,6 +41,7 @@ detection where the window edges act as walls).
   - [Example I.2: Random number distribution](src/Introduction/RandomNumberDistribution)
   - [Example I.3: Walker that tends to move to the right](src/Introduction/WalkerThatTendsToTheRight)
   - [Example I.4: Gaussian distribution](src/Introduction/GaussianDistribution)
+  - [Example I.5: Perlin noise walker](src/Introduction/PerlinNoiseWalker)
   - [Exercise I.3: Dynamic random walker](src/Introduction/DynamicRandomWalker)
   - [Exercise I.4: Paint splatter](src/Introduction/PaintSplatter)
   - [Exercise I.5: Gaussian random walk](src/Introduction/GaussianRandomWalk)

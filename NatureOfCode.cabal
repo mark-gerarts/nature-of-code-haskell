@@ -13,10 +13,12 @@ cabal-version:       >=1.10
 extra-source-files:  README.md
 
 library
-  hs-source-dirs:    src
-  build-depends:     base >= 4.7 && < 5
-  default-language:  Haskell2010
-  exposed-modules:   NatureOfCode.Util
+  hs-source-dirs:      src
+  build-depends:       base >= 4.7 && < 5,
+                       gloss >= 1.13
+  default-language:    Haskell2010
+  exposed-modules:     NatureOfCode.Util,
+                       NatureOfCode.Picture
 
 executable NatureOfCodeGloss
   hs-source-dirs:      src
@@ -30,3 +32,4 @@ executable NatureOfCodeGloss
                        mtl >= 2.2,
                        hsnoise == 0.0.2
   other-modules:       NatureOfCode.Util
+                       NatureOfCode.Picture
