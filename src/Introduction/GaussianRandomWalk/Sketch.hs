@@ -38,9 +38,7 @@ main = do
         update
 
 view :: World -> Picture
-view World{previousPositions=ps} = Pictures $ map renderPosition ps
-    where
-        renderPosition (x, y) = translate x y $ rectangleSolid 1 1
+view World{previousPositions=ps} = line ps
 
 update :: ViewPort -> Float -> World -> World
 update _ _ world@World{rndGen=g, currentPosition=p, previousPositions=ps} =

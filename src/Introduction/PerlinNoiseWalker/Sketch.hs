@@ -1,9 +1,8 @@
-module TemplateSimulate where
+module Introduction.PerlinNoiseWalker.Sketch where
 
 import Graphics.Gloss
-import Graphics.Gloss.Data.ViewPort ( ViewPort )
-import Numeric.Noise.Perlin
-import System.Random
+import Numeric.Noise.Perlin ( noiseValue, perlin )
+import System.Random ( newStdGen, Random(random) )
 import NatureOfCode.Picture ( borderedCircle )
 import NatureOfCode.Util ( mapRange )
 

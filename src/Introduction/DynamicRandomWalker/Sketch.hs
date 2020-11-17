@@ -40,9 +40,7 @@ main = do
         update
 
 view :: World -> Picture
-view World{previousPositions=ps} = Pictures $ map renderPosition ps
-    where
-        renderPosition (x, y) = translate x y $ rectangleSolid 1 1
+view World{previousPositions=ps} = line ps
 
 inputHandler :: Event -> World -> World
 inputHandler (EventMotion p) world = world {mousePosition=p}
