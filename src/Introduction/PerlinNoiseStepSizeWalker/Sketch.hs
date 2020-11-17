@@ -36,7 +36,7 @@ main = do
     g <- newStdGen
     let (seed, _) = random g
     simulate
-        (InWindow "Perlin noise walker" (width, height) (50, 50))
+        (InWindow "Perlin noise step size walker" (width, height) (50, 50))
         white
         20
         initial
