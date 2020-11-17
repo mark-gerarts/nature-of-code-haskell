@@ -46,6 +46,7 @@ detection where the window edges act as walls).
   - [Exercise I.4: Paint splatter](src/Introduction/PaintSplatter)
   - [Exercise I.5: Gaussian random walk](src/Introduction/GaussianRandomWalk)
   - [Exercise I.6: Custom distribution walker](src/Introduction/CustomDistributionWalker)
+  - [Exercise I.7: Perlin noise step size walker](src/Introduction/PerlinNoiseStepSizeWalker)
   - [Extra: Interactive perlin noise graph](src/Introduction/PerlinNoiseGraph)
 - [Fractals](src/Fractals/)
   - [Example 8.6: Recurisve tree](src/Fractals/RecursiveTree)
