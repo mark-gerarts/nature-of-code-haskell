@@ -30,6 +30,8 @@ executable NatureOfCodeGloss
                        containers >= 0.6,
                        random-fu >= 0.2.7,
                        mtl >= 2.2,
-                       hsnoise == 0.0.2
+                       hsnoise == 0.0.2,
+                       not-gloss >= 0.7.7,
+                       linear >= 1.20
   other-modules:       NatureOfCode.Util
                        NatureOfCode.Picture

@@ -1,7 +1,7 @@
-# Example I.6: 2D Perlin noise
+# Exercise I.9: Animated 2D Perlin noise
 
 ```
-$ stack runghc src/Introduction/PerlinNoise2D/Sketch.hs
+$ stack runghc src/Introduction/AnimatedPerlinNoise2D/Sketch.hs
 ```
 
-![2D Perlin noise](sketch.png)
+![Animated 2D Perlin noise](sketch.gif)

@@ -50,10 +50,18 @@ detection where the window edges act as walls).
   - [Exercise I.7: Perlin noise step size walker](src/Introduction/PerlinNoiseStepSizeWalker)
   - [Exercise I.8: Interactive 2D Perlin noise](src/Introduction/PerlinNoise2DInteractive/README.md)
   - [Exercise I.9: Animated 2D Perlin noise](src/Introduction/AnimatedPerlinNoise2D)
+  - [Exercise I.10: 3D Perlin noise](src/Introduction/PerlinNoise3D)
   - [Extra: Interactive perlin noise graph](src/Introduction/PerlinNoiseGraph)
 - [Fractals](src/Fractals/)
   - [Example 8.6: Recurisve tree](src/Fractals/RecursiveTree)
   - [Example 8.7: Recursive tree (dynamic)](src/Fractals/DynamicRecursiveTree)
+
+## 3D
+
+3D examples (e.g. [this one](src/Introduction/PerlinNoise3D)) are implemented
+using [not-gloss][not-gloss]. It's a library for 3D graphics that is not
+affiliated with, but heavily inspired by gloss. Its familiar feel make it
+integrate well with the rest of the sketches
 
 ## Recordings
 
@@ -89,3 +97,4 @@ See also:
 [ssr]: https://www.maartenbaert.be/simplescreenrecorder/
 [noc-lisp]: https://github.com/mark-gerarts/nature-of-code
 [noc-elm]: https://github.com/mark-gerarts/nature-of-code-elm
+[not-gloss]: https://hackage.haskell.org/package/not-gloss
