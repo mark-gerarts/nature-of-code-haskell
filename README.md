@@ -49,6 +49,7 @@ detection where the window edges act as walls).
   - [Exercise I.6: Custom distribution walker](src/Introduction/CustomDistributionWalker)
   - [Exercise I.7: Perlin noise step size walker](src/Introduction/PerlinNoiseStepSizeWalker)
   - [Exercise I.8: Interactive 2D Perlin noise](src/Introduction/PerlinNoise2DInteractive/README.md)
+  - [Exercise I.9: Animated 2D Perlin noise](src/Introduction/AnimatedPerlinNoise2D)
   - [Extra: Interactive perlin noise graph](src/Introduction/PerlinNoiseGraph)
 - [Fractals](src/Fractals/)
   - [Example 8.6: Recurisve tree](src/Fractals/RecursiveTree)
