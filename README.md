@@ -52,6 +52,8 @@ detection where the window edges act as walls).
   - [Exercise I.9: Animated 2D Perlin noise](src/Introduction/AnimatedPerlinNoise2D)
   - [Exercise I.10: 3D Perlin noise](src/Introduction/PerlinNoise3D)
   - [Extra: Interactive perlin noise graph](src/Introduction/PerlinNoiseGraph)
+- [Vectors](src/Vectors/)
+  - [Example 1.1: Bouncing ball with no vectors](src/Vectors/BouncingBallWithNoVectors)
 - [Fractals](src/Fractals/)
   - [Example 8.6: Recurisve tree](src/Fractals/RecursiveTree)
   - [Example 8.7: Recursive tree (dynamic)](src/Fractals/DynamicRecursiveTree)
