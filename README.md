@@ -55,6 +55,8 @@ detection where the window edges act as walls).
 - [Vectors](src/Vectors/)
   - [Example 1.1: Bouncing ball with no vectors](src/Vectors/BouncingBallWithNoVectors)
   - [Example 1.2: Bouncing ball with vectors](src/Vectors/BouncingBallWithVectors)
+  - [Example 1.3: Vector subtraction](src/Vectors/VectorSubtraction)
+  - [Example 1.4: Multiplying a vector](src/Vectors/VectorMultiplication)
   - [Exercise 1.2: Dynamic random walker with vectors](src/Vectors/DynamicRandomWalkerWithVectors)
   - [Exercise 1.3: 3D Bouncing ball](src/Vectors/BouncingBall3D)
 - [Fractals](src/Fractals/)
