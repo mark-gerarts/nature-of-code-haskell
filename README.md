@@ -10,13 +10,13 @@
 Run each sketch individually using the following command:
 
 ```
-$ stack runghci src/<chapter>/<name>/Sketch.hs
+$ stack runghc src/<chapter>/<name>/Sketch.hs
 ```
 
 E.g. to run the first example:
 
 ```
-$ stack runghci src/Introduction/TraditionalRandomWalk/Sketch.hs
+$ stack runghc src/Introduction/TraditionalRandomWalk/Sketch.hs
 ```
 
 The README of each sketch provides its full command as well, ready to be
