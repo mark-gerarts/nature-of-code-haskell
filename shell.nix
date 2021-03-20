@@ -19,6 +19,10 @@ mkShell {
     freeglut
     libGL
     libGLU
+
+    # For recordings
+    simplescreenrecorder
+    ffmpeg
   ];
 
   # See https://stackoverflow.com/a/53093412
